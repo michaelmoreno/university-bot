@@ -1,10 +1,14 @@
-import "reflect-metadata";
+import 'dotenv/config';
+import { Client } from "discord.js";
 
-import { HadesContainer } from "hades";
-import { installTextCommands } from "hades/dist/text-commands";
+const token = process.env.TOKEN;
 
-import { BotService } from "./services/BotService";
+console.log("Bot is starting...");
 
-const container = new HadesContainer();
-const bot = container.get(BotService);
-bot.login();
+const client = new Client({
+    intents: []
+});
+
+
+client.login(token);
+console.log(client);

@@ -10,8 +10,8 @@
   "author": "Michael Moreno",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.1",
-    "hades": "github:dustinlacewell/hades"
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
