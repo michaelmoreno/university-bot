@@ -1,13 +1,9 @@
-import { Client } from 'discord.js';
+import "reflect-metadata";
 import { token } from '../config.json';
+import { Bot } from './Bot';
 
-const client = new Client({
-	intents: []
-});
+import C from './inversify.config';
 
-client.once('ready', () => {
-	console.log('Ready!');
-});
+const bot = C.get(Bot);
 
-
-client.login(token);
+bot.start(token);

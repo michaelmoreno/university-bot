@@ -12,6 +12,11 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     /* Completeness */
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "lib": ["es6"],
+    "types": ["reflect-metadata"],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
